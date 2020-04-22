@@ -15,7 +15,8 @@
 			$(this).siblings(".txt").show();
 		});
 		$(".deletebtn").on("click",function(){
-			self.location("localhost:9090/deleteBoard");
+			var number = $(this).siblings("#bno").val();
+			self.location="/deleteBoard/"+number;
 		});
 		
 	});

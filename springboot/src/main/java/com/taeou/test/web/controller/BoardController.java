@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,7 +29,7 @@ public class BoardController {
 		return "welcome";
 	}
 	
-	@RequestMapping("/listBoard") 
+	@RequestMapping("listBoard") 
 	public ModelAndView listBoard(ModelAndView mav) throws Exception{
 		
 		List<Map> list = new ArrayList<Map>();
@@ -42,10 +43,11 @@ public class BoardController {
 		
 		return mav;
 	}
-	@RequestMapping("deleteBoard")
-	public void deleteBoard(@RequestParam("bno")int bno) throws Exception{
+	@RequestMapping("deleteBoard/{value}")
+	public void deleteBoard(@PathVariable int bno) throws Exception{
 		
-		boardService.deleteBoard(bno);
+//		boardService.deleteBoard(bno);
+		System.out.println("bno :::::::::::" + bno);
 		
 	}
 }
