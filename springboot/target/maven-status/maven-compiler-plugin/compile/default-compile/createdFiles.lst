@@ -1,0 +1,6 @@
+com\taeou\test\service\test\BoardService.class
+com\taeou\test\model\BoardDomain.class
+com\taeou\test\SpringBootMain.class
+com\taeou\test\service\test\BoardServiceImpl.class
+com\taeou\test\dao\BoardMapper.class
+com\taeou\test\web\controller\BoardController.class
