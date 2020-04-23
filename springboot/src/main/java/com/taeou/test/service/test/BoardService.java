@@ -12,7 +12,7 @@ public interface BoardService {
 	
 	public void addBoard(BoardDomain board) ;
 	
-	public void deleteBoard(int bno);
+	public void deleteBoard(String bno);
 	
 	public void updateBoard(BoardDomain board);
 	

@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Welcome TW.
+	Welcome TW. 
+	<br>
+	<a href="/listBoard">게시판</a>
 </body>
 </html>

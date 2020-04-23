@@ -24,8 +24,8 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public void deleteBoard(int bno) {
-		// TODO Auto-generated method stub
+	public void deleteBoard(String bno) {
+		boardMapper.deleteBoard(bno);
 
 	}
 

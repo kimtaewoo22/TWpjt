@@ -13,4 +13,6 @@ public interface BoardMapper {
 	void addBoard(BoardDomain board);	
 	
 	List<Map>  listBoard();
+	
+	void deleteBoard(String bno);
 }

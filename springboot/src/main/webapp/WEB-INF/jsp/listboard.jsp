@@ -19,6 +19,18 @@
 			self.location="/deleteBoard/"+number;
 		});
 		
+		$(".addbtn").on("click",function(){
+			self.location="/addBoardView";
+		});
+		
+		$(".updatebtn").on("click",function(){
+							
+				
+		
+			
+		});
+		
+		
 	});
 
 </script>
@@ -37,10 +49,11 @@
 						<span class="dddcc" >${result.REGDATE}		
 						<%-- <fmt:parseDate value="${result.REGDATE}" var="dayday" pattern='yyyymmdd'/>
 						<fmt:formatDate  value="${dayday}" pattern="yyyy-MM-dd"/> --%></span>
-						<input type="hidden" name="bno" value="${result.BNO}">			
+						<input type="hidden" id="bno" name="bno" value="${result.BNO}">			
 						<span class="tit">${result.TITLE}</span>
 						<button type="button" class="detailbtn" style="float: right;">상세보기</button>
 						<button type="button" class="deletebtn" style="float: right;">삭제</button>
+						<button type="button" class="updatebtn" style="float: right;">수정</button>
 						<div class="txt" data-element="accrcontent" style="padding-top:10px;display: block;">${result.CONTENTS}					
 						</div><hr>
 						</div>

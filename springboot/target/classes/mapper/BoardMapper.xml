@@ -25,11 +25,11 @@
 	
 	<insert id="addBoard" parameterType="com.taeou.test.model.BoardDomain">
 	INSERT INTO board(bno,title,contents,regdate,username) 
-	VALUES(board_no.NEXTVAL,#{BoardDomain.title},#{BoardDomain.contents},TO_CHAR(SYSDATE,'YYYY-MM-DD'),#{BoardDomain.username})	
+	VALUES(board_no.NEXTVAL,#{title:VARCHAR},#{contents:VARCHAR},TO_CHAR(SYSDATE,'YYYY-MM-DD'),#{userName:VARCHAR})	
 	</insert>
 	
 	<select id="listBoard" resultType="java.util.Map">
-	SELECT * FROM board
+	SELECT * FROM board ORDER BY bno
 	</select>
 	
 	<delete id="deleteBoard">
